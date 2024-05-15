@@ -1,0 +1,150 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body {
+   height: 100vh;
+   background-color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+h1 {
+   color: #000;
+   font-size: 55px;
+   margin: 80px 0;
+}
+
+.swiper {
+   width: 80%;
+   height: 100%;
+}
+
+.swiper-slide {
+   background-position: center;
+   background-size: cover;
+   width: 350px;
+}
+
+
+.slide-content {
+   text-align: center;
+   padding: 20px;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.slide-content p {
+   font-size: 22px;
+   color: black;
+}
+
+
+
+
+
+
+
+/*menu*/
+
+.menu-container {
+   width: 100%;
+   text-align: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: #000000;
+   z-index: 1;
+   /* Asegura que esté sobre otros elementos */
+}
+
+.menu-edit {
+   max-width: 900px;
+   margin: 0 auto;
+   /* Centra el menú horizontalmente */
+   font-size: 20px;
+}
+
+.menu-horizontal {
+   width: 100%;
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   padding: 0;
+   margin: 0;
+}
+
+.menu-horizontal>li>a {
+   display: block;
+   font-size: 2vh;
+   padding: 15px 20px;
+   color: white;
+   text-decoration: none;
+   transition: color 0.3s ease;
+   /* Añadimos una transición para que el cambio de color sea suave */
+}
+
+.menu-horizontal>li:hover {
+   background-color: rgb(255, 255, 255);
+}
+
+.menu-horizontal>li:hover>a {
+   color: black;
+   /* Cambiamos el color del texto a negro cuando pasas el ratón sobre el enlace */
+}
+
+.menu-vertical {
+   position: absolute;
+   display: none;
+   list-style: none;
+   width: 200px;
+   background-color: rgba(0, 0, 0, .5);
+   font-size: 2vh;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+   display: block;
+}
+
+.menu-vertical li:hover {
+   background-color: black;
+}
+
+.menu-vertical li a {
+   display: block;
+   color: white;
+   padding: 15px 15px 15px 20px;
+   text-decoration: none;
+}
+
+
+
+
+/* Estilos para el contenedor de las marcas */
+.brand-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+}
+
+/* Estilos para las imágenes de las marcas */
+.brand-logo {
+   width: 100px; /* Ajusta el tamaño según sea necesario */
+   margin: 0 25px; /* Espaciado entre las imágenes */
+   opacity: 0.4; /* Opacidad inicial de las imágenes */
+   transition:  0.3s ease; /* Transición suave de opacidad */
+   margin-top: 70px;
+   margin-bottom: -170px;
+}
+
+/* Estilo para resaltar las imágenes al pasar el cursor sobre ellas */
+.brand-logo:hover {
+   opacity: 1; /* Ajusta la opacidad al pasar el cursor sobre la imagen */
+   transform: scale(1.15);
+}
