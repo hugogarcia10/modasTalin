@@ -1,218 +1,183 @@
 /*SLIDE BAR*/
+
 /* Estilo para el scroll */
 ::-webkit-scrollbar {
    width: 2px; /* Ancho del scroll */
- }
+}
  
- /* Track */
- ::-webkit-scrollbar-track {
+/* Track */
+::-webkit-scrollbar-track {
    background: #ffffff; /* Color del fondo del scroll */
- }
+}
  
- /* Handle */
- ::-webkit-scrollbar-thumb {
+/* Handle */
+::-webkit-scrollbar-thumb {
    background: #000000; /* Color del scroll */
    border-radius: 10px; /* Bordes redondeados */
- }
+}
  
- /* Handle on hover */
- ::-webkit-scrollbar-thumb:hover {
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
    background: #888; /* Cambia el color del scroll al pasar el cursor */
- }
- 
-
-
-
-
-
-
+}
 
 /*INTRO*/
+/* Estilos generales */
 *::after, ::before {
    margin: 0;
    padding: 0;
-   box-sizing: inherit;
-   }
+   box-sizing: inherit; /* Hereda el modelo de caja */
+}
 
-   .intro{
-   position: fixed;
+/* Contenedor de introducción */
+.intro {
+   position: fixed; /* Posición fija */
    top: 0;
    left: 0;
    width: 100%;
-   height: 100vh;
+   height: 100vh; /* Altura de la ventana */
    display: flex;
-   align-items: center; 
-   justify-content: center; 
-   flex-direction: column; 
-   z-index: 99;
-   background:#000000;
-   transition: 1s;
-   box-shadow: 0 0 130px rgba(0, 0, 0, 0.5);
-   
+   align-items: center; /* Alinea verticalmente */
+   justify-content: center; /* Alinea horizontalmente */
+   flex-direction: column; /* Dirección de los elementos flexibles */
+   z-index: 99; /* Índice z para superponer */
+   background:#000000; /* Color de fondo */
+   transition: 1s; /* Transición de 1 segundo */
+   box-shadow: 0 0 130px rgba(0, 0, 0, 0.5); /* Sombra */
 }
-.intro img{
-   top: 150px;
-   position: absolute;
 
+/* Imagen dentro de la introducción */
+.intro img {
+   top: 150px; /* Posición superior */
+   position: absolute; /* Posición absoluta */
 }
-.intro p{
-   color: grey;
-   font-size: 1.6rem;
-   margin-top: 10px;
+
+/* Párrafo dentro de la introducción */
+.intro p {
+   color: grey; /* Color del texto */
+   font-size: 1.6rem; /* Tamaño de fuente */
+   margin-top: 10px; /* Margen superior */
 }
-.logo2{
-   font-size: 2.5rem;
-   color: white;
-}
+
+/* Estilos de logotipo */
 .logo2 {
-   font-size: 36px; /* Tamaño de fuente ajustable */
-   position: relative;
-   display: inline-block;
-   color: white;
+   font-size: 2.5rem; /* Tamaño de fuente */
+   color: white; /* Color del texto */
 }
 
+/* Partes del logotipo */
 .logo2-parts {
-   display: inline-block;
-   transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
-   position: relative;
-   bottom: 0;
+   display: inline-block; /* Mostrar como bloque en línea */
+   transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transiciones */
+   position: relative; /* Posición relativa */
+   bottom: 0; /* Posición inicial inferior */
 }
 
+/* Partes activas del logotipo */
 .logo2.active .logo2-parts {
    bottom: -100px; /* Altura del tobogán */
-   opacity: 0;
-}
-.content{
-   width: 100%;
-   padding: 50px;
-   font-size: 2rem;
+   opacity: 0; /* Opacidad */
 }
 
+/* Contenido */
+.content {
+   width: 100%; /* Ancho completo */
+   padding: 50px; /* Relleno */
+   font-size: 2rem; /* Tamaño de fuente */
+}
 
-
-
-
-
-
-
-
-
-*{
+/* Estilos generales */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
- }
- body {
-    font-family: "Poppins",sans-serif;
- }
- 
- 
- img {
-    max-width: 1200px;
-    margin: 0 auto;
- }
- 
- 
- .header {
-   display: flex;
-   align-items: center;
-   min-height: 80vh;
-   background-color: #F5F5F5;
-   padding: 70px 0;
-   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-
- 
- 
- .menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
- 
- 
- .logo{
-    font-size: 25px;
-    color: #111111;
-    text-transform: uppercase;
-    font-weight: 000;
- }
- 
- 
- .menu .navbar ul li {
-    position: relative;
-    float: left;
- }
- 
- 
- .menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: #111111;
-    display: block;
+ /* Establece la fuente principal para el cuerpo del documento */
+body {
+   font-family: "Poppins", sans-serif;
 }
 
+/* Establece el ancho máximo y centra las imágenes */
+img {
+   max-width: 1200px;
+   margin: 0 auto;
+}
 
+/* Estilos para la cabecera */
+.header {
+  display: flex; /* Muestra los elementos de la cabecera como una fila flexible */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  min-height: 80vh; /* Altura mínima del 80% del viewport */
+  background-color: #F5F5F5; /* Color de fondo de la cabecera */
+  padding: 70px 0; /* Relleno superior e inferior de 70px */
+  box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Sombra */
+}
 
+/* Estilos para el menú de navegación */
+.menu {
+   position: absolute; /* Posiciona el menú de navegación de manera absoluta */
+   top: 0; /* Establece la posición superior en 0 */
+   left: 0; /* Establece la posición izquierda en 0 */
+   right: 0; /* Establece la posición derecha en 0 */
+   display: flex; /* Muestra los elementos del menú como una fila flexible */
+   align-items: center; /* Alinea los elementos verticalmente al centro */
+   justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
 
+/* Estilos para el logotipo */
+.logo {
+   font-size: 25px; /* Tamaño de la fuente */
+   color: #111111; /* Color del texto */
+   text-transform: uppercase; /* Transforma el texto a mayúsculas */
+   font-weight: 000; /* Peso de la fuente */
+}
 
+/* Estilos para los elementos de la lista de navegación */
+.menu .navbar ul li {
+   position: relative; /* Posiciona los elementos relativos al contenedor padre */
+   float: left; /* Coloca los elementos en línea */
+}
+
+/* Estilos para los enlaces de la lista de navegación */
+.menu .navbar ul li a {
+   font-size: 18px; /* Tamaño de la fuente */
+   padding: 20px; /* Relleno de los enlaces */
+   color: #111111; /* Color del texto */
+   display: block; /* Muestra los enlaces como bloques */
+}
+
+/* Estilos para los enlaces animados */
 ab {
-   position: relative;
-   display: block;
-   text-transform: uppercase;
-   margin: 20px 0;
-   padding: 10px 20px;
-   text-decoration: none;
-   color: #262626;
-   font-size: 18px;
-   font-weight: 600;
-   transition: .5s;
-   z-index: 1;
-   &:before {
-     content: '';
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     border-top: 2px solid #262626;
-     border-bottom: 2px solid #262626;
-     transform: scaleY(2);
-     opacity: 0;
-     transition: .3s;
-   }
-   &:after {
-     content: '';
-     position: absolute;
-     top: 2px;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: #ffffff;
-     transform: scale(0);
-     opacity: 0;
-     transition: .3s;
-     z-index: -1;
-   }
-   &:hover {
-     color: #fff;
-     &:before {
-       transform: scaleY(1);
-       opacity: 1;
-     }
-     &:after {
-       transform: scaleY(1);
-       opacity: 1;
-     }
-   }
- }
+   position: relative; /* Posiciona los elementos relativos */
+   display: block; /* Muestra los elementos como bloques */
+   text-transform: uppercase; /* Transforma el texto a mayúsculas */
+   margin: 20px 0; /* Margen superior e inferior */
+   padding: 10px 20px; /* Relleno de los elementos */
+   text-decoration: none; /* Elimina la decoración del texto */
+   color: #262626; /* Color del texto */
+   font-size: 18px; /* Tamaño de la fuente */
+   font-weight: 600; /* Peso de la fuente */
+   transition: .5s; /* Transición de medio segundo */
+   z-index: 1; /* Índice z para superponer */
+}
+
+/* Estilos para la línea superior e inferior del enlace */
+ab:before {
+   content: ''; /* Contenido generado */
+   position: absolute; /* Posiciona el elemento de manera absoluta */
+   top: 0; /* Establece la posición superior en 0 */
+   left: 0; /* Establece la posición izquierda en 0 */
+   width: 100%; /* Ancho del elemento */
+   height: 100%; /* Altura del elemento */
+   border-top: 2px solid #262626; /* Borde superior de 2px sólido */
+   border-bottom: 2px solid #262626; /* Borde inferior de 2px sólido */
+   transform: scaleY(2); /* Escala verticalmente */
+   opacity: 0; /* Opacidad inicial */
+   transition: .3s;
+}
 
 
 

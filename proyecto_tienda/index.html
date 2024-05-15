@@ -1,242 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE-edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Declaración del tipo de documento y el idioma -->
+   <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+   <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!-- Configuración de compatibilidad con IE -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+   <title>Modas Talin</title> <!-- Título de la página -->
+   <link rel="stylesheet" href="style.css"> <!-- Enlace a la hoja de estilos local -->
+
+   <!-- Enlace a la hoja de estilos de Font Awesome para iconos -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+   integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
 </head>
 <body>
 
-  <div class="intro">
-        <img src="../proyecto_tienda/images/logo final.png" alt="">
-        <h1 class="logo2 active">
-            <span class="logo2-parts">M</span>
-            <span class="logo2-parts">O</span>
-            <span class="logo2-parts">D</span>
-            <span class="logo2-parts">A</span>
-            <span class="logo2-parts">S</span>
-            <span class="logo2-parts"> </span>
-            <span class="logo2-parts">T</span>
-            <span class="logo2-parts">A</span>
-            <span class="logo2-parts">L</span>
-            <span class="logo2-parts">I</span>
-            <span class="logo2-parts">N</span>
-        </h1>
-        
-        <script>
-            // Simulando un temporizador para activar la animación
-            setTimeout(function() {
-                document.querySelector('.logo2').classList.remove('active');
-            }, 1000);
-        </script>
-        
-        
-    </div>
-    <script src="scrip.js"></script>
+<!-- Sección de introducción -->
+<div class="intro">
+    <img src="../proyecto_tienda/images/logo final.png" alt=""> <!-- Imagen del logotipo -->
+    <!-- Encabezado animado con las letras de "Modas Talin" -->
+    <h1 class="logo2 active">
+        <span class="logo2-parts">M</span>
+        <span class="logo2-parts">O</span>
+        <span class="logo2-parts">D</span>
+        <span class="logo2-parts">A</span>
+        <span class="logo2-parts">S</span>
+        <span class="logo2-parts"> </span>
+        <span class="logo2-parts">T</span>
+        <span class="logo2-parts">A</span>
+        <span class="logo2-parts">L</span>
+        <span class="logo2-parts">I</span>
+        <span class="logo2-parts">N</span>
+    </h1>
 
-
-
-
-
-
-
-
-
-
-   <header class="header">
-
-
- <div class="menu-container">
-    <nav class="menu-edit">
-        <ul class="menu-horizontal">
-            <li><a href="#">Inicio</a></li>
-            <li>
-                <a href="#">Género</a>
-                <ul class="menu-vertical">
-                    <li><a href="caballeros/caballeros.html">Caballeros</a></li>
-                    <li><a href="señoras/señoras.html">Señoras</a></li>
-                </ul>
-            </li>    
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+    <!-- Script para desactivar la clase 'active' después de un segundo -->
+    <script>
+        setTimeout(function() {
+            document.querySelector('.logo2').classList.remove('active');
+        }, 1000);
+    </script>
 </div>
 
+<!-- Inclusión del script.js -->
+<script src="scrip.js"></script>
 
+<!-- Encabezado -->
+<header class="header">
+    <!-- Contenedor del menú -->
 
+    <div class="menu-container">
+        <!-- Navegación -->
 
+        <nav class="menu-edit">
+            <!-- Lista de elementos de menú horizontal -->
 
-
-
- 
-
-
-
- <div class="header-content container">
-    <div class="header-img">
-        <img src="images/CABALLEROS (1).png" alt="">
+            <ul class="menu-horizontal">
+                <li><a href="#">Inicio</a></li>
+                <!-- Elemento de menú con submenú -->
+                <li>
+                    <a href="#">Género</a>
+                    <!-- Lista de elementos de menú vertical -->
+                    <ul class="menu-vertical">
+                        <li><a href="caballeros/caballeros.html">Caballeros</a></li>
+                        <li><a href="señoras/señoras.html">Señoras</a></li>
+                    </ul>
+                </li>    
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
-    
-    <div class="header-txt">
-        <h1>Modas Talin</h1>
-        <p>Las mejores prendas</p>
-        <a href="#" class="btn-1">informacion</a>
+
+    <!-- Contenido del encabezado -->
+    <div class="header-content container">
+
+        <!-- Imagen del encabezado -->
+        <div class="header-img">
+            <img src="images/CABALLEROS (1).png" alt="">
+        </div>
+        <!-- Texto del encabezado -->
+        <div class="header-txt">
+            <h1>Modas Talin</h1>
+            <p>Las mejores prendas</p>
+            <a href="#" class="btn-1">informacion</a>
+        </div>
     </div>
+</header>
 
- </div>
-
-
-    </header>
-    
-
-
-
-
-   <!--Productos-->
-   <main class="products container" id="lista-1">
-
-       <h2>Novedades</h2>
-
-       <div class="product-content">
-
-<div class="product">
-   <img src="images/1.png" alt="" >
-   <div class="product-txt">
-       <h3>Producto</h3>
-   </div>
-</div>
-
-<div class="product">
-   <img src="images/2.png" alt="" >
-   <div class="product-txt">
-       <h3>Producto</h3>
-   </div>
-
-</div>
-
-<div class="product">
-   <img src="images/3.png" alt="" >
-   <div class="product-txt">
-       <h3>Producto</h3>
-   </div>
-
-</div>
-<div class="product">
-   <img src="images/4.png" alt="" >
-   <div class="product-txt">
-       <h3>Producto</h3>
+<!-- Productos -->
+<main class="products container" id="lista-1">
+    <h2>Novedades</h2>
+    <div class="product-content">
+        <!-- Lista de productos -->
+        <!-- Cada producto tiene una imagen y un texto -->
+        <div class="product">
+           <img src="images/1.png" alt="">
+           <div class="product-txt">
+               <h3>Producto</h3>
+           </div>
+        </div>
+        <div class="product">
+            <img src="images/1.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+            </div>
+         </div>
+         <div class="product">
+            <img src="images/1.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+            </div>
+         </div>
+         <div class="product">
+            <img src="images/1.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+            </div>
+         </div>
+         <div class="product">
+            <img src="images/1.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+            </div>
+         </div>
+         <div class="product">
+            <img src="images/1.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+            </div>
+         </div>
+         <div class="product">
+            <img src="images/1.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+            </div>
+         </div>
+         <div class="product">
+            <img src="images/1.png" alt="">
+            <div class="product-txt">
+                <h3>Producto</h3>
+            </div>
+         </div>
     </div>
-</div>
+</main>
 
-<div class="product">
-   <img src="images/5.png" alt="" >
-   <div class="product-txt">
-       <h3>Producto</h3>
-       
-    </div>
-</div>
-
-<div class="product">
-   <img src="images/6.png" alt="" >
-   <div class="product-txt">
-       <h3>Producto</h3>
-  </div>
-</div>
-
-<div class="product">
-    <img src="images/6.png" alt="" >
-    <div class="product-txt">
-        <h3>Producto</h3>
-
-    </div>
- </div>
-
- <div class="product">
-    <img src="images/6.png" alt="" >
-    <div class="product-txt">
-        <h3>Producto</h3>
-    </div>
- </div>
-
-    </div>
-   </main>
-
-
-
-
-
-   <div class="contenedor">
+<!-- Contenedor de las cartas -->
+<div class="contenedor">
     <div class="carta">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <div class="contenido">
-        <h2>Ana</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nam perferendis! Vel voluptatem harum aspernatur provident praesentium nam qui ea voluptates magni ipsam eaque, at perspiciatis nobis ut fugiat nulla?.</p>
-      </div>
+        <img src="imagen1.jpg" alt="Ana">
+        <div class="contenido">
+            <h2>Ana</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+        </div>
     </div>
     <div class="carta">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <div class="contenido">
-        <h2>Natalia</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla itaque eaque, laboriosam recusandae inventore voluptates id, maxime nesciunt, voluptatibus ut. Sunt officiis magni nesciunt dolores laborum eligendi sint numquam.</p>
-      </div>
+        <img src="imagen2.jpg" alt="Natalio">
+        <div class="contenido">
+            <h2>Natalio</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+        </div>
     </div>
-  </div>
+</div>
 
 
-
-
-
-
-
+<!-- Pie de página -->
 <footer class="footer">
-
-
-<div class="footer-content container">
-
-
-<div class="link">
-    <h3>Dirección 📍</h3>
-        <ul>
-            <li><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd418988ee922d57:0x779c8d0e5447c6ad?sa=X&ved=1t:8290&ictx=111">Av. Dr. Mendiguchía Carriche, 30, 28913 Leganés, Madrid</a></li>
-        </ul>
-</div>
-
-<div class="link">
-    <h3>Teléfono 📞</h3>
-    <ul>
-        <li><a href="#">675 35 78 93</a></li>
-    </ul>
-</div>
-
-<div class="link">
-    <h3>Redes sociales</h3>
-    <ul class="social-icons">
+    <!-- Contenedor principal del pie de página -->
+    <div class="footer-content container">
+    
+        <!-- Sección de dirección -->
+        <div class="link">
+            <!-- Título de la sección -->
+            <h3>Dirección 📍</h3>
+            <ul>
+                <!-- Elemento de lista con el enlace a la dirección -->
+                <li><a href="https://www.google.com/maps/place/..." target="_blank">Av. Dr. Mendiguchía Carriche, 30, 28913 Leganés, Madrid</a></li>
+            </ul>
+        </div>
         
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-       
-
-    </ul>
-</div>
-
-<div class="link">
-    <h3>Déjanos tu opinión</h3>
-    <a href="https://www.google.com/search?sa=X&sca_esv=be81b04602fdf0ed&sca_upv=1&tbm=lcl&q=Modas+Talin+Rese%C3%B1as&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2MDO0sDS0sDC3NDUzNjY2NTYx3MDI-IpRxDc_JbFYISQxJzNPISi1OPXwxsTiRaxYhQHGCCF0SAAAAA&rldimm=8618918879563335341&hl=es-ES&ved=2ahUKEwjridulvICGAxViUEEAHSlEDd0Q9fQKegQIFhAF&biw=1440&bih=773&dpr=1#lkt=LocalPoiReviews" target="_blank"><img src="images/Reseña.png" alt="" class=""></a>
-      
-</div>
-
-
-
-
-</div>
-
-
+        <!-- Sección de teléfono -->
+        <div class="link">
+            <!-- Título de la sección -->
+            <h3>Teléfono 📞</h3>
+            <ul>
+                <!-- Elemento de lista con el número de teléfono -->
+                <li><a href="#">675 35 78 93</a></li>
+            </ul>
+        </div>
+        
+        <!-- Sección de redes sociales -->
+        <div class="link">
+            <!-- Título de la sección -->
+            <h3>Redes sociales</h3>
+            <ul class="social-icons">
+                <!-- Elemento de lista con el icono de Instagram -->
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        
+        <!-- Sección para dejar opiniones -->
+        <div class="link">
+            <!-- Título de la sección -->
+            <h3>Déjanos tu opinión</h3>
+            <!-- Enlace para dejar una reseña -->
+            <a href="https://www.google.com/search?sa=X&sca_esv=be81b04602fdf0ed&sca_upv=1&tbm=lcl&q=Modas+Talin+Rese%C3%B1as&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2MDO0sDS0sDC3NDUzNjY2NTYx3MDI-IpRxDc_JbFYISQxJzNPISi1OPXwxsTiRaxYhQHGCCF0SAAAAA&rldimm=8618918879563335341&hl=es-ES&ved=2ahUKEwjridulvICGAxViUEEAHSlEDd0Q9fQKegQIFhAF&biw=1440&bih=773&dpr=1#lkt=LocalPoiReviews" target="_blank">
+                <!-- Imagen para representar una reseña -->
+                <img src="images/Reseña.png" alt="" class="">
+            </a>
+        </div>
+        
+    </div>
 </footer>
 
-
-<script src="script.js"></script>
+        <!-- Inclusión del script.js -->
+        <script src="script.js"></script>
 </body>
 </html>
