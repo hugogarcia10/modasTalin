@@ -179,448 +179,408 @@ ab:before {
    transition: .3s;
 }
 
-
-
-
-
-
 #menu {
-   display: none;
+   display: none; /* Oculta el elemento con ID 'menu' */
 }
-
 
 .menu-icono {
-   width: 25px;
+   width: 25px; /* Establece el ancho de '.menu-icono' en 25px */
 }
-
 
 .menu label {
-   cursor: pointer;
-   display: none;
+   cursor: pointer; /* Cambia el cursor al pasar sobre el elemento a un puntero */
+   display: none; /* Oculta el elemento <label> dentro del menú */
 }
-
 
 .submenu {
-   position: relative;
+   position: relative; /* Establece la posición relativa para los elementos con clase 'submenu' */
 }
-
-
-
 
 table {
-   width: 100%;
+   width: 100%; /* Establece el ancho de las tablas al 100% del contenedor */
 }
 
-
-th,td {
-   color:#ffffff;
+th, td {
+   color: #ffffff; /* Establece el color del texto de las celdas de la tabla en blanco */
 }
-
 
 .borrar {
-   background-color: #111111;
-   border-radius: 50;
-   padding: 5px 10px;
-   text-decoration: none;
-   color: #ffffff;
-   font-weight: 800;
-   cursor: pointer;
+   background-color: #111111; /* Establece el color de fondo de '.borrar' en negro */
+   border-radius: 50; /* Establece el radio de borde en 50 (falta la unidad, por ejemplo '50px') */
+   padding: 5px 10px; /* Establece el relleno de 5px arriba y abajo y 10px a los lados */
+   text-decoration: none; /* Elimina la decoración del texto */
+   color: #ffffff; /* Establece el color del texto en blanco */
+   font-weight: 800; /* Establece el grosor de la fuente en negrita */
+   cursor: pointer; /* Cambia el cursor al pasar sobre el elemento a un puntero */
 }
-
 
 .header-content {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex: 1;
-   padding: 0 200px;
+   display: flex; /* Establece el contenedor como un flexbox */
+   justify-content: space-between; /* Distribuye el espacio entre los elementos */
+   align-items: center; /* Centra verticalmente los elementos */
+   flex: 1; /* Permite que el contenedor crezca y ocupe todo el espacio disponible */
+   padding: 0 200px; /* Agrega relleno a los lados del contenedor */
 }
 
-
 .header-img {
-   flex-basis: 50%;
-   text-align: center;
-   transition: transform 0.3s ease;
+   flex-basis: 50%; /* Establece el tamaño inicial de la imagen al 50% del contenedor */
+   text-align: center; /* Centra el contenido horizontalmente */
+   transition: transform 0.3s ease; /* Agrega una transición suave al transformar la imagen */
 }
 
 .header-img:hover {
-   transform: scale(1.5); /* Aumenta el tamaño en un 10% */
+   transform: scale(1.5); /* Aumenta el tamaño de la imagen en un 10% al pasar el cursor sobre ella */
 }
-
-
-
-
-
 
 .header-txt {
-   flex-basis: 50%;
-   text-align: center;
+   flex-basis: 50%; /* Establece el tamaño inicial del texto al 50% del contenedor */
+   text-align: center; /* Centra el texto horizontalmente */
 }
-
 
 .header-txt h1 {
-   font-size: 90px;
-   text-transform: uppercase;
-   line-height: 1;
-   color: #111111;
-   font-family: 'Oswald',sans-serif;
-   margin-bottom: 15px;
+   font-size: 90px; /* Tamaño de fuente grande */
+   text-transform: uppercase; /* Convierte el texto a mayúsculas */
+   line-height: 1; /* Establece la altura de línea en 1 */
+   color: #111111; /* Color del texto */
+   font-family: 'Oswald', sans-serif; /* Fuente del texto */
+   margin-bottom: 15px; /* Margen inferior */
 }
-
 
 .header-txt p {
-   font-size: 20px;
-   text-transform: uppercase;
-   margin-bottom: 20px;
+   font-size: 20px; /* Tamaño de fuente */
+   text-transform: uppercase; /* Convierte el texto a mayúsculas */
+   margin-bottom: 20px; /* Margen inferior */
 }
-
 
 .btn-1 {
-   display: flex;
-   padding: 11px 25px;
-   background-color: #111111;
-   color: #ffffff;
-   border-radius: 5px;
+   display: flex; /* Establece el botón como un flexbox */
+   padding: 11px 25px; /* Relleno del botón */
+   background-color: #111111; /* Color de fondo */
+   color: #ffffff; /* Color del texto */
+   border-radius: 5px; /* Radio de borde */
 }
 
-
 .ofert {
-   padding: 20px 0;
-   display: flex;
-   justify-content: center;
+   padding: 20px 0; /* Relleno del contenedor de ofertas */
+   display: flex; /* Establece el contenedor como un flexbox */
+   justify-content: center; /* Centra horizontalmente el contenido */
 }
 
 .ofert-1 {
-   text-align: center;
-   display: flex;
-   align-items: center;
-   background-color: grey;
-   padding: 20px;
-   margin: 0 25px; /* Ajusta el valor de margen según tus necesidades */
-   transition: transform 0.3s; /* Añade una transición suave */
-   border-radius: 1rem;
-}
-.ofert-1:hover {
-   transform: scale(1.2); /* Aumenta el tamaño en un 5% */
+   text-align: center; /* Centra el contenido horizontalmente */
+   display: flex; /* Establece el contenedor como un flexbox */
+   align-items: center; /* Centra verticalmente el contenido */
+   background-color: grey; /* Color de fondo */
+   padding: 20px; /* Relleno del contenedor */
+   margin: 0 25px; /* Margen horizontal */
+   transition: transform 0.3s; /* Agrega una transición suave al transformar el contenedor */
+   border-radius: 1rem; /* Radio de borde */
 }
 
+.ofert-1:hover {
+   transform: scale(1.2); /* Aumenta el tamaño del contenedor en un 5% al pasar el cursor sobre él */
+}
 
 .ofert-img {
-   flex-basis: 20%;
-   margin-right: 15px;
-}
-.ofert-img img {
-    width: 50px;
- }
- 
- 
- .ofert-txt {
-    flex-basis: 50%;
-    text-align: center;
- }
- 
- 
- .ofert-txt h3 {
-    color: #111111;
-    font-family: 'Oswald',sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
- }
- 
- 
- .btn-2 {
-    display: inline-block;
-    padding: 7px 10px;
-    background-color: #111111;
-    color: #ffffff;
-    border-radius: 5px;
-    font-size: 15px;
- }
- 
- 
- .products {
-    padding: 50px 0;
-    text-align: center;
+   flex-basis: 20%; /* Establece el tamaño inicial de la imagen al 20% del contenedor */
+   margin-right: 15px; /* Margen derecho */
 }
 
+.ofert-img img {
+    width: 50px; /* Ancho de la imagen */
+}
+
+.ofert-txt {
+   flex-basis: 50%; /* Establece el tamaño inicial del texto al 50% del contenedor */
+   text-align: center; /* Centra el texto horizontalmente */
+}
+
+.ofert-txt h3 {
+    color: #111111; /* Color del texto */
+    font-family: 'Oswald', sans-serif; /* Fuente del texto */
+    font-size: 25px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+.btn-2 {
+   display: inline-block; /* Establece el botón como un elemento en línea con bloque de respaldo */
+   padding: 7px 10px; /* Relleno del botón */
+   background-color: #111111; /* Color de fondo */
+   color: #ffffff; /* Color del texto */
+   border-radius: 5px; /* Radio de borde */
+   font-size: 15px; /* Tamaño de fuente */
+}
+
+.products {
+   padding: 50px 0; /* Añade relleno superior e inferior */
+   text-align: center; /* Centra el contenido horizontalmente */
+}
 
 .products h2 {
-   color: #111111;
-   font-family: 'Oswald',sans-serif;
-   font-size: 50px;
-   text-transform: uppercase;
-   margin-bottom: 50px
+   color: #111111; /* Color del texto */
+   font-family: 'Oswald', sans-serif; /* Fuente del texto */
+   font-size: 50px; /* Tamaño de fuente */
+   text-transform: uppercase; /* Convierte el texto a mayúsculas */
+   margin-bottom: 50px; /* Margen inferior */
 }
-
 
 .product-content {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 50px;
+   display: grid; /* Establece el contenedor como una cuadrícula */
+   grid-template-columns: repeat(4, 1fr); /* Divide el contenedor en 4 columnas iguales */
+   gap: 50px; /* Espacio entre las filas y columnas de la cuadrícula */
 }
-
 
 .product {
-   text-align: center;
-   width: 100%;
-   padding: 30px;
-   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+   text-align: center; /* Centra el contenido horizontalmente */
+   width: 100%; /* Ancho del contenedor */
+   padding: 30px; /* Relleno del contenedor */
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
 }
-
 
 .product img {
-   width: 250px;
-   height: 370px;
-   margin-bottom: 20px;
+   width: 250px; /* Ancho de la imagen */
+   height: 370px; /* Altura de la imagen */
+   margin-bottom: 20px; /* Margen inferior */
+   /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(133, 139, 201));*/
 }
-
 
 .product h3 {
-   font-size: 20px;
-   color: #111111;
-   font-family: 'Oswald',sans-serif;
-   text-transform: uppercase;
-   margin-bottom: 15px;
+   font-size: 20px; /* Tamaño de fuente */
+   color: #111111; /* Color del texto */
+   font-family: 'Oswald', sans-serif; /* Fuente del texto */
+   text-transform: uppercase; /* Convierte el texto a mayúsculas */
+   margin-bottom: 15px; /* Margen inferior */
 }
-
 
 .product p, .precio {
-   font-size: 16px;
-   color: #111111;
-   margin-bottom: 15px;
-}
-.precio {
-    font-weight: 800;
- }
- 
- 
- .icons {
-    padding: 50px 0 100px 0;
-    display: flex;
-    justify-content: space-between;
- }
- 
- 
- .icon-1 {
-    flex-basis: calc(33.3% -30px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px;
-    background-color: #F5F5F5;
- }
- 
- 
- .icon-txt h3 {
-    font-size: 20px;
-    color: #111111;
-    font-family: 'Oswald',sans-serif;
-    text-transform: uppercase;
- }
- 
- 
- .icon-txt p {
-    font-size: 16px;
-    color: #111111;
- }
- 
- 
- .blog {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 100px;
- }
- 
- 
- .blog-1 {
-    flex-basis: calc(33.3% -30px);
- }
- 
- 
- .blog-1 img {
-    margin-bottom: 20px;
+   font-size: 16px; /* Tamaño de fuente */
+   color: #111111; /* Color del texto */
+   margin-bottom: 15px; /* Margen inferior */
 }
 
+.precio {
+   font-weight: 800; /* Grosor de la fuente */
+}
+
+.icons {
+   padding: 50px 0 100px 0; /* Añade relleno al contenedor */
+   display: flex; /* Establece el contenedor como un flexbox */
+   justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+.icon-1 {
+   flex-basis: calc(33.3% - 30px); /* Establece el ancho del elemento con margen */
+   display: flex; /* Establece el elemento como un flexbox */
+   align-items: center; /* Centra verticalmente el contenido */
+   justify-content: space-between; /* Distribuye el espacio entre los elementos */
+   padding: 25px; /* Relleno del elemento */
+   background-color: #F5F5F5; /* Color de fondo */
+}
+
+.icon-txt h3 {
+   font-size: 20px; /* Tamaño de fuente */
+   color: #111111; /* Color del texto */
+   font-family: 'Oswald', sans-serif; /* Fuente del texto */
+   text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+.icon-txt p {
+   font-size: 16px; /* Tamaño de fuente */
+   color: #111111; /* Color del texto */
+}
+
+.blog {
+   display: flex; /* Establece el contenedor como un flexbox */
+   justify-content: space-between; /* Distribuye el espacio entre los elementos */
+   padding-bottom: 100px; /* Añade relleno inferior al contenedor */
+}
+
+.blog-1 {
+   flex-basis: calc(33.3% - 30px); /* Establece el ancho del elemento con margen */
+}
+
+.blog-1 img {
+   margin-bottom: 20px; /* Margen inferior de la imagen */
+}
 
 .blog-1 h3 {
-   font-size: 20px;
-   color: #111111;
-   font-family: 'Oswald',sans-serif;
-   text-transform: uppercase;
-   margin-bottom: 15px;
+   font-size: 20px; /* Tamaño de fuente */
+   color: #111111; /* Color del texto */
+   font-family: 'Oswald', sans-serif; /* Fuente del texto */
+   text-transform: uppercase; /* Convierte el texto a mayúsculas */
+   margin-bottom: 15px; /* Margen inferior */
 }
-
 
 .blog-1 p {
-   font-size: 16px;
-   color: #111111;
+   font-size: 16px; /* Tamaño de fuente */
+   color: #111111; /* Color del texto */
 }
-
-
-
 
 
 /*FOOTER*/
 
 .footer {
-   padding: 65px 0;
-   background-color: #111111;
-  
+   padding: 65px 0; /* Añade relleno superior e inferior */
+   background-color: #111111; /* Color de fondo */
 }
 
-
 .footer-content {
-   display: flex;
-   justify-content: space-between;
+   display: flex; /* Establece el contenedor como un flexbox */
+   justify-content: space-between; /* Distribuye el espacio entre los elementos */
 }
 
 .link {
-   flex: 1;
-   margin-left: 7rem; /* Ajusta este valor según la separación deseada */
+   flex: 1; /* Establece que el elemento ocupe todo el espacio disponible */
+   margin-left: 7rem; /* Margen izquierdo */
 }
 
 .link h3 {
-   font-size: 18px;
-   color: #ffffff;
-   font-family: 'Oswald', sans-serif;
-   text-transform: uppercase;
-   margin-bottom: 10px;
+   font-size: 18px; /* Tamaño de fuente */
+   color: #ffffff; /* Color del texto */
+   font-family: 'Oswald', sans-serif; /* Fuente del texto */
+   text-transform: uppercase; /* Convierte el texto a mayúsculas */
+   margin-bottom: 10px; /* Margen inferior */
 }
 
 .link a {
-   font-size: 18px;
-   color: #dcdcdc;
-   margin-bottom: 10px;
-   text-decoration: none;
+   font-size: 18px; /* Tamaño de fuente */
+   color: #dcdcdc; /* Color del texto */
+   margin-bottom: 10px; /* Margen inferior */
+   text-decoration: none; /* Sin subrayado */
 }
 
 .link img {
-   display: block;
-   margin: -4rem 0rem; /* Centra la imagen horizontalmente */
+   display: block; /* Hace que la imagen sea un bloque */
+   margin: -4rem 0rem; /* Margen superior e inferior */
    transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
-   transform: scale(0.3); /* Escala la imagen al 50% de su tamaño original */
+   transform: scale(0.3); /* Escala la imagen al 30% de su tamaño original */
 }
-
-
 
 .link img:hover {
-   transform: scale(0.4); 
+   transform: scale(0.4); /* Aumenta el tamaño de la imagen al 40% en el hover */
 }
 
+/* Estilos aplicados cuando el ancho de la ventana es igual o menor a 991px */
 @media (max-width:991px) {
-
-
    .menu {  
-    padding: 20px;
+    padding: 20px; /* Añade relleno al menú */
 }
-
 
 .menu label {
-    display: inline;
+    display: inline; /* Muestra el label */
 }
-
 
 .menu .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #181818;
-    display: none;
+    position: absolute; /* Establece la posición */
+    top: 100%; /* Distancia desde la parte superior */
+    left: 0; /* Alinea a la izquierda */
+    right: 0; /* Alinea a la derecha */
+    background-color: #181818; /* Color de fondo */
+    display: none; /* Oculta el menú */
 }
-
 
 .menu .navbar ul li {
-    width: 100%
+    width: 100%; /* Ancho del ítem del menú */
 }
-
 
 .menu .navbar ul li a {
-    color: #ffffff;
+    color: #ffffff; /* Color del texto del enlace */
 }
-
 
 #menu:checked ~ .navbar {
-    display: initial;
+    display: initial; /* Muestra el menú al hacer clic en el checkbox */
 }
 
-
 .logo {
-    display: none;
+    display: none; /* Oculta el logo */
 }
 
 .submenu:hover #carrito {
-    min-width: 100%;
+    min-width: 100%; /* Ancho mínimo del carrito */
 }
-.header{
-    min-height: 0vh;
+
+.header {
+    min-height: 0vh; /* Altura mínima del encabezado */
 }
+
 .header-content {
-    padding: 50px 0;
-    flex-direction: column;
+    padding: 50px 0; /* Añade relleno al contenido del encabezado */
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
 }
-.header-img{
-    display: none;
+
+.header-img {
+    display: none; /* Oculta la imagen del encabezado */
 }
-.header-txt{
-    flex-basis: 100%;
-    text-align: center;
+
+.header-txt {
+    flex-basis: 100%; /* Establece el ancho base al 100% */
+    text-align: center; /* Centra el texto horizontalmente */
 }
+
 .header-txt h1 {
-    font-size: 70px;
+    font-size: 70px; /* Tamaño de la fuente */
 }
 
 .ofert {
-    padding:  30px 30px 0 30px;
-    flex-direction: column;
+   padding:  30px 30px 0 30px; /* Relleno superior de 30px y ningún relleno en los otros lados */
+   flex-direction: column; /* Configura la dirección de los elementos secundarios en columna */
 }
+
 .ofert-1 {
-    margin-bottom: 30px;
+   margin-bottom: 30px; /* Añade un margen inferior de 30px a los elementos secundarios */
 }
-.products{
-    padding: 0 30px 30px 30px;
+
+.products {
+   padding: 0 30px 30px 30px; /* Relleno en la parte inferior de 30px y ninguno en los otros lados */
 }
-.products h2{
-    margin-bottom: 30px;
+
+.products h2 {
+   margin-bottom: 30px; /* Añade un margen inferior de 30px a los elementos h2 dentro de la sección de productos */
 }
+
 .product-content {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
+   grid-template-columns: repeat(1, 1fr); /* Define un diseño de cuadrícula con una sola columna */
+   gap: 30px; /* Espacio entre columnas */
 }
+
 .productimg {
-    width: 200px;
-    height: 280px;
+   width: 200px; /* Ancho de la imagen de producto */
+   height: 280px; /* Alto de la imagen de producto */
 }
-.icons{
-    padding: 30px;
-    flex-direction: column;
+
+.icons {
+   padding: 30px; /* Relleno para los iconos */
+   flex-direction: column; /* Configura la dirección de los elementos secundarios en columna */
 }
-.icon-1{
-    margin-bottom: 30px;
+
+.icon-1 {
+   margin-bottom: 30px; /* Añade un margen inferior de 30px a los elementos secundarios de los iconos */
 }
+
 .blog {
-    padding: 0 30px 30px 30px;
-    flex-direction: column;
-}
-.blog-1{
-    margin-bottom: 30px;
-}
-.footer{
-    padding: 30px;
-}
-.footer-content{
-    flex-direction: column;
-    text-align: center;
+   padding: 0 30px 30px 30px; /* Relleno en la parte inferior de la sección de blogs */
+   flex-direction: column; /* Configura la dirección de los elementos secundarios en columna */
 }
 
- 
+.blog-1 {
+   margin-bottom: 30px; /* Añade un margen inferior de 30px a los elementos secundarios de la sección de blogs */
 }
 
+.footer {
+   padding: 30px; /* Relleno para la sección de pie de página */
+}
+
+.footer-content {
+   flex-direction: column; /* Configura la dirección de los elementos secundarios en columna */
+   text-align: center; /* Centra el texto */
+}
+
+}
 
 
 /*ESTRELLAS*/
-.rating {
+/*.rating {
    display: inline-block;
 }
 
@@ -634,9 +594,9 @@ th,td {
    cursor: pointer;
    font-size: 30px;
    color: #666;
-   margin-left: 5px; /* Ajusta este valor según sea necesario */
-}
+   margin-left: 5px; /* Ajusta este valor según sea necesario }*/
 
+/*
 .rating:not(:checked) > label:before {
    content: '★';
 }
@@ -653,182 +613,175 @@ th,td {
 
 .rating > input:checked ~ label {
    color: #ffa723;
-}
+}*/
 
 
 
 
-/*menu*/
 
+/* Estilos para el menú */
 .menu-container {
-   width: 100%;
-   text-align: center;
-   position: fixed;
-   top: 0;
-   left: 0;
-   background-color: #000000;
+   width: 100%; /* Ancho completo */
+   text-align: center; /* Centra el contenido del menú horizontalmente */
+   position: fixed; /* Fija la posición del menú */
+   top: 0; /* Alinea el menú en la parte superior */
+   left: 0; /* Alinea el menú en el extremo izquierdo */
+   background-color: #000000; /* Color de fondo negro */
    z-index: 1; /* Asegura que esté sobre otros elementos */
 }
 
 .menu-edit{
-   max-width: 900px;
+   max-width: 900px; /* Anchura máxima del menú */
    margin: 0 auto; /* Centra el menú horizontalmente */
-   font-size: 20px;
+   font-size: 20px; /* Tamaño de fuente del menú */
 }
+
 .menu-horizontal{
-   width: 100%;
-   list-style: none;
-   display: flex;
-   justify-content: space-around;
-   padding: 0;
-   margin: 0;
+   width: 100%; /* Ancho completo */
+   list-style: none; /* Quita los puntos de lista */
+   display: flex; /* Muestra los elementos en línea */
+   justify-content: space-around; /* Distribuye uniformemente los elementos horizontales */
+   padding: 0; /* Quita el relleno */
+   margin: 0; /* Quita el margen */
 }
+
 .menu-horizontal > li > a {
-   display: block;
-   font-size: 2vh;
-   padding: 15px 20px;
-   color: white;
-   text-decoration: none;
-   transition: color 0.3s ease, font-size 0.3s ease; /* Añadimos una transición para el cambio de color y tamaño de letra */
+   display: block; /* Muestra los enlaces como bloques */
+   font-size: 2vh; /* Tamaño de fuente de los enlaces */
+   padding: 15px 20px; /* Relleno de los enlaces */
+   color: white; /* Color del texto */
+   text-decoration: none; /* Quita el subrayado de los enlaces */
+   transition: color 0.3s ease, font-size 0.3s ease; /* Añade una transición para el cambio de color y tamaño de letra */
 }
 
 .menu-horizontal > li:hover {
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(255, 255, 255); /* Cambia el color de fondo al pasar el ratón */
 }
 
 .menu-horizontal > li:hover > a {
-   color: black; /* Cambiamos el color del texto a negro cuando pasas el ratón sobre el enlace */
+   color: black; /* Cambia el color del texto a negro al pasar el ratón sobre el enlace */
 }
 
 .menu-vertical{
-   position: absolute;
-   display: none;
-   list-style: none;
-   width: 200px;
-   background-color: rgba(0, 0, 0, .5);
-   font-size: 2vh;
+   position: absolute; /* Posición absoluta */
+   display: none; /* Oculta el menú vertical por defecto */
+   list-style: none; /* Quita los puntos de lista */
+   width: 200px; /* Ancho del menú vertical */
+   background-color: rgba(0, 0, 0, .5); /* Color de fondo con transparencia */
+   font-size: 2vh; /* Tamaño de fuente del menú vertical */
 }
+
 .menu-horizontal li:hover .menu-vertical{
-   display: block;
+   display: block; /* Muestra el menú vertical al pasar el ratón sobre el elemento padre */
 }
+
 .menu-vertical li:hover{
-   background-color: black;
+   background-color: black; /* Cambia el color de fondo al pasar el ratón */
 }
+
 .menu-vertical li a{
-   display: block;
-   color: white;
-   padding: 15px 15px 15px 20px;
-   text-decoration: none;
+   display: block; /* Muestra los enlaces como bloques */
+   color: white; /* Color del texto */
+   padding: 15px 15px 15px 20px; /* Relleno de los enlaces */
+   text-decoration: none; /* Quita el subrayado de los enlaces */
 }
 
 
-
-/*RRSS*/
+/* Estilos para los iconos sociales */
 .social-icons{
-   padding: 0;
-   list-style: none;
-   margin: -0.5em;
-   margin-top: 5px;
-   margin-left: 3rem;
+   padding: 0; /* Quita el relleno */
+   list-style: none; /* Quita los puntos de lista */
+   margin: -0.5em; /* Ajuste negativo de margen */
+   margin-top: 5px; /* Margen superior */
+   margin-left: 3rem; /* Margen izquierdo */
 }
+
 .social-icons li{
-   display: inline-block;
-   margin: 0.15em;
-   position: relative;
-   font-size: 1.2em;
+   display: inline-block; /* Muestra los elementos en línea */
+   margin: 0.15em; /* Margen entre los elementos */
+   position: relative; /* Posición relativa */
+   font-size: 1.2em; /* Tamaño de fuente */
 } 
+
 .social-icons i{
-   color: #fff;
-   position: absolute;
-   top: 12px;
-   left: 13px;
-   transition: all 265ms ease-in-out;
+   color: #fff; /* Color de los iconos */
+   position: absolute; /* Posición absoluta */
+   top: 12px; /* Posiciona los iconos en la parte superior */
+   left: 13px; /* Posiciona los iconos en la parte izquierda */
+   transition: all 265ms ease-in-out; /* Añade una transición */
 }
+
 .social-icons a{
-   display: inline-block;
+   display: inline-block; /* Muestra los enlaces como bloques */
 }
 
 .social-icons a::before{
-   transform: scale(1);
-   content: '';
-   width: 50px;
-   height: 50px;
-   border-radius: 100%;
-   display: block;
-   background: linear-gradient(45deg, #000000, #000000);
-   transition: all 265ms ease-out;
+   transform: scale(1); /* Escala de transformación */
+   content: ''; /* Contenido vacío */
+   width: 50px; /* Ancho */
+   height: 50px; /* Alto */
+   border-radius: 100%; /* Borde circular */
+   display: block; /* Muestra el elemento como bloque */
+   background: linear-gradient(45deg, #000000, #000000); /* Degradado lineal */
+   transition: all 265ms ease-out; /* Añade una transición */
 }
+
 .social-icons a:hover::before{
-   transform: scale(0);
-   transition: all 265ms ease-in;
+   transform: scale(0); /* Escala de transformación */
+   transition: all 265ms ease-in; /* Añade una transición */
 }
 
 .social-icons a:hover i{
-   transform: scale(1.8);
-   color: red;
-   background: linear-gradient(45deg, #ffffff, #ffffff);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   transition:  all 265ms ease-in;
+   transform: scale(1.8); /* Escala de transformación */
+   color: red; /* Color del texto */
+   background: linear-gradient(45deg, #ffffff, #ffffff); /* Degradado lineal */
+   background-clip: text; /* Clip de fondo */
+   -webkit-background-clip: text; /* Clip de fondo para navegadores webkit */
+   -webkit-text-fill-color: transparent; /* Color del texto transparente para navegadores webkit */
+   transition:  all 265ms ease-in; /* Añade una transición */
 }
-
 
 .social-icons .fa-instagram {
    color: #E1306C; /* Color para Instagram */
    font-size: 1.5em; /* Tamaño del icono de Instagram */
 }
 
-
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
+/* Estilos para la estructura de la página */
 .contenedor {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 50px; /* Espacio desde la parte superior */
- }
+   display: flex; /* Muestra los elementos en línea */
+   justify-content: center; /* Centra horizontalmente */
+   align-items: center; /* Centra verticalmente */
+   margin-top: 50px; /* Margen superior */
+}
  
- .carta {
-   display: flex;
-   align-items: center;
-   margin: 0 20px; /* Separación entre las cartas */
-   padding: 20px;
-   border-radius: 10px;
+.carta {
+   display: flex; /* Muestra los elementos en línea */
+   align-items: center; /* Centra verticalmente */
+   margin: 0 20px; /* Margen entre las cartas */
+   padding: 20px; /* Relleno de las cartas */
+   border-radius: 10px; /* Borde redondeado */
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Sombra */
-   border-radius: 1rem;
-   border: 1px;
-   margin-bottom: 2rem;
+   border-radius: 1rem; /* Borde redondeado */
+   border: 1px; /* Borde de 1px */
+   margin-bottom: 2rem; /* Margen inferior */
  }
  
- .carta img {
+.carta img {
    width: 150px; /* Ancho de la imagen */
-   height: auto;
-   border-radius: 8px; /* Bordes redondos para la imagen */
+   height: auto; /* Altura automática */
+   border-radius: 8px; /* Borde redondeado */
  }
  
- .carta .contenido {
-   margin-left: 20px; /* Espacio entre la imagen y el texto */
+.carta .contenido {
+   margin-left: 20px; /* Margen izquierdo */
  }
  
- .carta h2 {
-   margin: 0;
+.carta h2 {
+   margin: 0; /* Quita el margen */
  }
  
- .carta p {
-   margin: 5px 0;
+.carta p {
+   margin: 5px 0; /* Margen superior e inferior */
  }
- 
+
  

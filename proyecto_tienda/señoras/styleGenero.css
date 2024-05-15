@@ -1,3 +1,4 @@
+/* Reset de estilos y configuraciones globales */
 * {
    padding: 0;
    margin: 0;
@@ -5,146 +6,146 @@
    font-family: sans-serif;
 }
 
+/* Estilos para el cuerpo de la página */
 body {
-   height: 100vh;
-   background-color: #ffffff;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   height: 100vh; /* Altura completa de la ventana del navegador */
+   background-color: #ffffff; /* Color de fondo blanco */
+   display: flex; /* Utiliza el modelo de caja flexible */
+   flex-direction: column; /* Apila elementos verticalmente */
+   justify-content: center; /* Centra verticalmente los elementos */
+   align-items: center; /* Centra horizontalmente los elementos */
 }
 
+/* Estilos para los encabezados h1 */
 h1 {
-   color: #000;
-   font-size: 55px;
-   margin: 80px 0;
+   color: #000; /* Color de texto negro */
+   font-size: 55px; /* Tamaño de fuente grande */
+   margin: 80px 0; /* Margen superior e inferior grande */
 }
 
+/* Estilos para el contenedor del Swiper */
 .swiper {
-   width: 80%;
-   height: 100%;
+   width: 80%; /* Ancho del 80% del contenedor padre */
+   height: 100%; /* Altura del 100% del contenedor padre */
 }
 
+/* Estilos para las diapositivas del Swiper */
 .swiper-slide {
-   background-position: center;
-   background-size: cover;
-   width: 350px;
+   background-position: center; /* Posición de fondo centrada */
+   background-size: cover; /* Tamaño de fondo cubrir */
+   width: 350px; /* Ancho fijo de las diapositivas */
 }
 
-
+/* Estilos para el contenido de las diapositivas */
 .slide-content {
-   text-align: center;
-   padding: 20px;
-   font-family: 'Courier New', Courier, monospace;
+   text-align: center; /* Texto centrado horizontalmente */
+   padding: 20px; /* Relleno interior */
+   font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
 }
 
+/* Estilos para los párrafos dentro del contenido de las diapositivas */
 .slide-content p {
-   font-size: 22px;
-   color: black;
+   font-size: 22px; /* Tamaño de fuente grande */
+   color: black; /* Color de texto negro */
 }
 
-
-
-
-
-
-
-/*menu*/
-
+/* Estilos para el contenedor del menú */
 .menu-container {
-   width: 100%;
-   text-align: center;
-   position: fixed;
-   top: 0;
-   left: 0;
-   background-color: #000000;
-   z-index: 1;
-   /* Asegura que esté sobre otros elementos */
+   width: 100%; /* Ancho completo del contenedor */
+   text-align: center; /* Texto centrado horizontalmente */
+   position: fixed; /* Posicionamiento fijo */
+   top: 0; /* Arriba del todo */
+   left: 0; /* A la izquierda del todo */
+   background-color: #000000; /* Color de fondo negro */
+   z-index: 1; /* Z-index para estar sobre otros elementos */
 }
 
+/* Estilos para el menú */
 .menu-edit {
-   max-width: 900px;
-   margin: 0 auto;
-   /* Centra el menú horizontalmente */
-   font-size: 20px;
+   max-width: 900px; /* Ancho máximo del menú */
+   margin: 0 auto; /* Margen automático para centrar */
+   font-size: 20px; /* Tamaño de fuente grande */
 }
 
+/* Estilos para la lista de elementos del menú horizontal */
 .menu-horizontal {
-   width: 100%;
-   list-style: none;
-   display: flex;
-   justify-content: space-around;
-   padding: 0;
-   margin: 0;
+   width: 100%; /* Ancho completo del menú */
+   list-style: none; /* Quita los puntos de lista */
+   display: flex; /* Utiliza el modelo de caja flexible */
+   justify-content: space-around; /* Distribuye uniformemente los elementos */
+   padding: 0; /* Sin relleno */
+   margin: 0; /* Sin margen */
 }
 
+/* Estilos para los elementos del menú horizontal */
 .menu-horizontal>li>a {
-   display: block;
-   font-size: 2vh;
-   padding: 15px 20px;
-   color: white;
-   text-decoration: none;
-   transition: color 0.3s ease;
-   /* Añadimos una transición para que el cambio de color sea suave */
+   display: block; /* Mostrar como bloque */
+   font-size: 2vh; /* Tamaño de fuente relativo */
+   padding: 15px 20px; /* Relleno interno */
+   color: white; /* Color de texto blanco */
+   text-decoration: none; /* Sin subrayado de enlace */
+   transition: color 0.3s ease; /* Transición suave de color */
 }
 
+/* Estilos para los elementos del menú horizontal al pasar el cursor */
 .menu-horizontal>li:hover {
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(255, 255, 255); /* Color de fondo blanco */
 }
 
+/* Estilos para los elementos del menú horizontal al pasar el cursor */
 .menu-horizontal>li:hover>a {
-   color: black;
-   /* Cambiamos el color del texto a negro cuando pasas el ratón sobre el enlace */
+   color: black; /* Color de texto negro */
 }
 
+/* Estilos para la lista de elementos del menú vertical */
 .menu-vertical {
-   position: absolute;
-   display: none;
-   list-style: none;
-   width: 200px;
-   background-color: rgba(0, 0, 0, .5);
-   font-size: 2vh;
+   position: absolute; /* Posicionamiento absoluto */
+   display: none; /* Ocultar inicialmente */
+   list-style: none; /* Quita los puntos de lista */
+   width: 200px; /* Ancho fijo */
+   background-color: rgba(0, 0, 0, .5); /* Color de fondo semitransparente */
+   font-size: 2vh; /* Tamaño de fuente relativo */
 }
 
+/* Estilos para mostrar el menú vertical al pasar el cursor sobre el menú horizontal */
 .menu-horizontal li:hover .menu-vertical {
-   display: block;
+   display: block; /* Mostrar el menú vertical */
 }
 
+/* Estilos para los elementos del menú vertical al pasar el cursor */
 .menu-vertical li:hover {
-   background-color: black;
+   background-color: black; /* Color de fondo negro */
 }
 
+/* Estilos para los enlaces dentro de los elementos del menú vertical */
 .menu-vertical li a {
-   display: block;
-   color: white;
-   padding: 15px 15px 15px 20px;
-   text-decoration: none;
+   display: block; /* Mostrar como bloque */
+   color: white; /* Color de texto blanco */
+   padding: 15px 15px 15px 20px; /* Relleno interno */
+   text-decoration: none; /* Sin subrayado de enlace */
 }
-
-
-
 
 /* Estilos para el contenedor de las marcas */
 .brand-container {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 20px 0;
+   width: 100%; /* Ancho completo del contenedor */
+   display: flex; /* Utiliza el modelo de caja flexible */
+   justify-content: center; /* Centra horizontalmente los elementos */
+   align-items: center; /* Centra verticalmente los elementos */
+   padding: 20px 0; /* Relleno interior */
 }
 
 /* Estilos para las imágenes de las marcas */
 .brand-logo {
-   width: 100px; /* Ajusta el tamaño según sea necesario */
-   margin: 0 25px; /* Espaciado entre las imágenes */
-   opacity: 0.4; /* Opacidad inicial de las imágenes */
-   transition:  0.3s ease; /* Transición suave de opacidad */
-   margin-top: 70px;
-   margin-bottom: -170px;
+   width: 70px; /* Ancho fijo de las imágenes */
+   margin: 0 25px; /* Margen entre las imágenes */
+   opacity: 0.4; /* Opacidad inicial */
+   transition:  0.3s ease; /* Transición suave */
+   margin-top: 70px; /* Margen superior */
+   margin-bottom: -170px; /* Margen inferior negativo */
 }
 
-/* Estilo para resaltar las imágenes al pasar el cursor sobre ellas */
+/* Estilos para resaltar las imágenes de las marcas al pasar el cursor */
 .brand-logo:hover {
-   opacity: 1; /* Ajusta la opacidad al pasar el cursor sobre la imagen */
-   transform: scale(1.15);
+   opacity: 1; /* Opacidad completa */
+   transform: scale(1.15); /* Aumenta el tamaño */
 }

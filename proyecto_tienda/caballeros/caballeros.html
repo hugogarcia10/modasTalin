@@ -2,24 +2,30 @@
 <html lang="en">
 
 <head>
+  <!-- Metadatos del documento -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título de la página -->
   <title>Simple Web Code</title>
-  <!-- Link Swiper's CSS -->
+  <!-- Enlace al CSS de Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-  <!-- link file css -->
+  <!-- Enlace al archivo CSS personalizado -->
   <link rel="stylesheet" href="styleGenero.css">
 </head>
 
 <body>
+  <!-- Contenedor del menú -->
   <div class="menu-container">
+    <!-- Menú de navegación -->
     <nav class="menu-edit">
+      <!-- Lista de elementos del menú horizontal -->
       <ul class="menu-horizontal">
+        <!-- Elementos del menú -->
         <li><a href="../index.html">Inicio</a></li>
         <li>
           <a href="#">Género</a>
+          <!-- Lista de elementos del menú vertical -->
           <ul class="menu-vertical">
             <li><a href="#">Caballeros</a></li>
             <li><a href="../señoras/señoras.html">Señoras</a></li>
@@ -31,23 +37,18 @@
     </nav>
   </div>
 
-
-
-  <!--LOGOS-->
+  <!-- Contenedor de los logotipos de las marcas -->
   <div class="brand-container">
+    <!-- Logotipos de las marcas -->
     <img class="brand-logo" src="https://www.camisaslavespitamotril.es/img/logo-1641652015.jpg">
     <img class="brand-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsNp8loLDHQrAYz3n7U_IpfRi2gTE4OCSQadAqcBqXWg&s">
   </div>
 
-
-
-
-
-
-  <h1> </h1>
-  <!-- Swiper -->
+  <h1></h1>
+  <!-- Contenedor del carrousel de imágenes -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
+      <!-- Diapositivas del carrousel -->
       <div class="swiper-slide">
         <a href="../caballeros/prendas/camisas.html" style="text-decoration: none;">
           <div class="slide-content">
@@ -56,25 +57,7 @@
           </div>
         </a>
       </div>
-
-      <div class="swiper-slide">
-        <a href="../caballeros/prendas/pantalones.html" style="text-decoration: none;">
-          <div class="slide-content">
-            <img src="images/camisas.png" alt="">
-            <p><b>Pantalones</b></p>
-          </div>
-        </a>
-      </div>
-
-      <div class="swiper-slide">
-        <a href="../caballeros/prendas/polos.html" style="text-decoration: none;">
-          <div class="slide-content">
-            <img src="images/camisas.png" alt="">
-            <p><b>Polos</b></p>
-          </div>
-        </a>
-      </div>
-
+      
       <div class="swiper-slide">
         <a href="../caballeros/prendas/chaquetas.html" style="text-decoration: none;">
           <div class="slide-content">
@@ -119,7 +102,6 @@
           </div>
         </a>
       </div>
-
 
       <div class="swiper-slide">
         <a href="../caballeros/prendas/chaquetas.html" style="text-decoration: none;">
@@ -142,13 +124,11 @@
     </div>
   </div>
 
-
-
-  <!-- Swiper JS -->
+  <!-- Script de Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
+  <!-- Inicialización de Swiper -->
   <script>
+    /** Inicialización de Swiper con algunas opciones de configuración */
     var swiper = new Swiper(".mySwiper", {
       effect: "coverflow",
       grabCursor: true,
