@@ -340,9 +340,10 @@ th, td {
 
 .product img {
    width: 250px; /* Ancho de la imagen */
-   height: 370px; /* Altura de la imagen */
+   height: 335px; /* Altura de la imagen */
    margin-bottom: 20px; /* Margen inferior */
    /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(133, 139, 201));*/
+   border: 2px solid #ddd; /* Añadir borde a la imagen */
 }
 
 .product h3 {
