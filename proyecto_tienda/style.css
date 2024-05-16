@@ -116,6 +116,19 @@ img {
   box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Sombra */
 }
 
+.logo-container {
+   position: absolute;
+   top: -10px;
+   left: -10px;
+   z-index: 999; /* Asegura que el logo esté sobre cualquier otro contenido */
+   background-size: contain;
+   padding: 10px;
+   border-radius: 1px;
+}
+.logo-container img {
+   width: 73px; /* Ajusta el tamaño del logo según tu preferencia */
+}
+
 /* Estilos para el menú de navegación */
 .menu {
    position: absolute; /* Posiciona el menú de navegación de manera absoluta */
