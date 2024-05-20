@@ -431,6 +431,99 @@ th, td {
    color: #111111; /* Color del texto */
 }
 
+/* Clase expandida para el producto */
+.product.expanded {
+   transform: scale(1.4); /* Aumentar el tamaño */
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Aumentar la sombra */
+   z-index: 10; /* Asegurar que el producto esté en la parte superior */
+   background-color: white;
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+   .products {
+     padding: 50px 10px;
+   }
+ 
+   .product-content {
+     grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+/* Estilos para el botón */
+.button {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   width: 2em; /* Tamaño reducido */
+   height: 2em; /* Tamaño reducido */
+   border: none;
+   background: rgba(180, 83, 107, 0.11);
+   border-radius: 5px;
+   transition: background 0.5s;
+   display: none; /* Inicialmente oculto */
+ }
+ 
+ .X, .Y {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 1em; /* Tamaño reducido */
+   height: 1px; /* Tamaño reducido */
+   background-color: #fff;
+ }
+ 
+ .X {
+   transform: translateX(-50%) rotate(45deg);
+ }
+ 
+ .Y {
+   transform: translateX(-50%) rotate(-45deg);
+ }
+ 
+ .close {
+   position: absolute;
+   display: flex;
+   padding: 0.4rem 0.75rem; /* Tamaño reducido */
+   align-items: center;
+   justify-content: center;
+   transform: translateX(-50%);
+   top: -70%;
+   left: 50%;
+   width: 1.5em; /* Tamaño reducido */
+   height: 0.85em; /* Tamaño reducido */
+   font-size: 8px; /* Tamaño reducido */
+   background-color: rgb(19, 22, 24);
+   color: rgb(187, 229, 236);
+   border: none;
+   border-radius: 3px;
+   pointer-events: none;
+   opacity: 0;
+ }
+ 
+ .button:hover {
+   background-color: rgb(211, 21, 21);
+ }
+ 
+ .button:active {
+   background-color: rgb(130, 0, 0);
+ }
+ 
+ .button:hover > .close {
+   animation: close 0.2s forwards 0.25s;
+ }
+ 
+ @keyframes close {
+   100% {
+     opacity: 1;
+   }
+ }
+ 
+ /* Clase expandida para el producto */
+ .product.expanded .button {
+   display: block; /* Mostrar el botón cuando el producto está expandido */
+ }
+
 
 /*FOOTER*/
 
@@ -589,49 +682,7 @@ th, td {
    flex-direction: column; /* Configura la dirección de los elementos secundarios en columna */
    text-align: center; /* Centra el texto */
 }
-
 }
-
-
-/*ESTRELLAS*/
-/*.rating {
-   display: inline-block;
-}
-
-.rating:not(:checked) > input {
-   position: absolute;
-   visibility: hidden;
-}
-
-.rating:not(:checked) > label {
-   float: right;
-   cursor: pointer;
-   font-size: 30px;
-   color: #666;
-   margin-left: 5px; /* Ajusta este valor según sea necesario }*/
-
-/*
-.rating:not(:checked) > label:before {
-   content: '★';
-}
-
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label {
-   color: #e58e09;
-}
-
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-   color: #ff9e0b;
-}
-
-.rating > input:checked ~ label {
-   color: #ffa723;
-}*/
-
-
-
-
 
 /* Estilos para el menú */
 .menu-container {
