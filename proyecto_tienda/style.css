@@ -112,13 +112,14 @@ img {
   display: flex; /* Muestra los elementos de la cabecera como una fila flexible */
   align-items: center; /* Alinea los elementos verticalmente al centro */
   min-height: 80vh; /* Altura mínima del 80% del viewport */
+  max-height: 150vh;
   background-color: #F5F5F5; /* Color de fondo de la cabecera */
   padding: 48px 0; /* Relleno superior e inferior de 70px */
-  box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Sombra */
+  box-shadow: 0 0 50px rgba(0,0,0,0.5); /* Sombra */
 }
 
 .logo-container {
-   position: absolute;
+   position: fixed;
    top: -10px;
    left: -10px;
    z-index: 999; /* Asegura que el logo esté sobre cualquier otro contenido */
@@ -229,9 +230,9 @@ th, td {
 }
 
 .header-content {
-   position: relative;
+   position:relative;
    width: 100%;
-   height: 80vh; /* O la altura que desees */
+   height: 90vh; /* O la altura que desees */
    overflow: hidden;
 }
 
@@ -450,6 +451,7 @@ th, td {
    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Aumentar la sombra */
    z-index: 10; /* Asegurar que el producto esté en la parte superior */
    background-color: white;
+   transition: 0.3s;
 }
 
 /* Media Query para pantallas pequeñas */
@@ -560,13 +562,12 @@ th, td {
    color: #ffffff; /* Color del texto */
    font-family: 'Oswald', sans-serif; /* Fuente del texto */
    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-   margin-bottom: 10px; /* Margen inferior */
+   margin-bottom: 0px; /* Margen inferior */
 }
 
 .link a {
    font-size: 18px; /* Tamaño de fuente */
    color: #dcdcdc; /* Color del texto */
-   margin-bottom: 10px; /* Margen inferior */
    text-decoration: none; /* Sin subrayado */
 }
 
@@ -575,6 +576,7 @@ th, td {
    margin: -4rem 0rem; /* Margen superior e inferior */
    transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
    transform: scale(0.3); /* Escala la imagen al 30% de su tamaño original */
+   margin-bottom: -6.4vh;
 }
 
 .link img:hover {
