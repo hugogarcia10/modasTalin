@@ -20,22 +20,17 @@
    background: #888; /* Cambia el color del scroll al pasar el cursor */
  }
 
-
-
-
-
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    text-decoration: none;
    list-style: none;
+   scroll-behavior: smooth;
 }
 body {
    font-family: "Poppins",sans-serif;
 }
-
-
 
 /*menu*/
 
@@ -309,8 +304,12 @@ body {
 
 /*-------FOOTER----------*/
 .footer {
-   padding: 50px 0;
    background-color: #111111;
+   color: white;
+   padding: 10px;
+   text-align: center;
+   font-size: 1.5em; /* Tamaño de texto medio-grande */
+   box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.1); /* Sombra para darle un poco de estilo */
 }
 
 .footer-content {
@@ -319,28 +318,40 @@ body {
    justify-content: center;
    align-items: center;
    text-align: center;
-   padding: 0 20px; /* Agregar padding a los lados */
+   padding: 20 20px; /* Agregar padding a los lados */
    position: relative; /* Agregado para posicionar el código QR */
    margin: 0 10px;
 }
 
 .link {
-   margin: 20px 0;
+   flex: 1; /* Establece que el elemento ocupe todo el espacio disponible */
+   margin-left: 7rem; /* Margen izquierdo */
 }
 
 .link h3 {
-   font-size: 18px;
-   color: #ffffff;
-   font-family: 'Oswald', sans-serif;
-   text-transform: uppercase;
-   margin-bottom: 10px;
+   font-size: 18px; /* Tamaño de fuente */
+   color: #ffffff; /* Color del texto */
+   font-family: 'Oswald', sans-serif; /* Fuente del texto */
+   text-transform: uppercase; /* Convierte el texto a mayúsculas */
+   margin-bottom: 10px; /* Margen inferior */
 }
 
 .link a {
-   font-size: 18px;
-   color: #dcdcdc;
-   margin-bottom: 10px;
-   text-decoration: none;
+   font-size: 18px; /* Tamaño de fuente */
+   color: #dcdcdc; /* Color del texto */
+   margin-bottom: 10px; /* Margen inferior */
+   text-decoration: none; /* Sin subrayado */
+}
+
+.link img {
+   display: block; /* Hace que la imagen sea un bloque */
+   margin: -5rem 0rem; /* Margen superior e inferior */
+   transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
+   transform: scale(0.3); /* Escala la imagen al 30% de su tamaño original */
+}
+
+.link img:hover {
+   transform: scale(0.4); /* Aumenta el tamaño de la imagen al 40% en el hover */
 }
 
 .social-icons{
@@ -391,7 +402,6 @@ body {
    -webkit-text-fill-color: transparent;
    transition:  all 265ms ease-in;
 }
-
 
 .social-icons .fa-instagram {
    color: #E1306C; /* Color para Instagram */

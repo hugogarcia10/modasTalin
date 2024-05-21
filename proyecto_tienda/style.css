@@ -93,6 +93,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
  /* Establece la fuente principal para el cuerpo del documento */
@@ -528,7 +529,7 @@ th, td {
 /*FOOTER*/
 
 .footer {
-   padding: 65px 0; /* Añade relleno superior e inferior */
+   padding: 50px 0; /* Añade relleno superior e inferior */
    background-color: #111111; /* Color de fondo */
 }
 
